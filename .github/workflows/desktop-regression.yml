@@ -46,7 +46,7 @@ on:
         type: number
         default: 0
 
-      PLAYWRIGHT_WORKER_COUNT:
+      PLAYWRIGHT_WORKERS_COUNT:
         description: 'Playwright workers to start'
         required: true
         type: number
@@ -68,7 +68,7 @@ jobs:
       PLAYWRIGHT_CUSTOM_REPORTER: 1
       PLAYWRIGHT_REPEAT_COUNT: ${{ github.event.inputs.PLAYWRIGHT_REPEAT_COUNT }}
       PLAYWRIGHT_RETRIES_COUNT: ${{ github.event.inputs.PLAYWRIGHT_RETRIES_COUNT }}
-      PLAYWRIGHT_WORKER_COUNT: ${{ github.event.inputs.PLAYWRIGHT_WORKER_COUNT }}
+      PLAYWRIGHT_WORKERS_COUNT: ${{ github.event.inputs.PLAYWRIGHT_WORKERS_COUNT }}
       DESKTOP_CACHED_FOLDER: desktop/node_modules
 
     steps:
